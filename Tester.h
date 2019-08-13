@@ -11,8 +11,6 @@ namespace test
 	class Tester
 	{
 	private:
-		//std::ostringstream _resultStream{};
-
 		std::shared_ptr<ravendb::client::documents::DocumentStore> _store{};
 
 		std::vector<std::string> _booksIds{};
@@ -55,7 +53,5 @@ namespace test
 		void prepare(library::Library& library);
 
 		void runInParallel(uint32_t num_of_threads);
-
-//		void fillResultBuffer(char* resultBuffer, uint64_t* size);
 	};
 }
